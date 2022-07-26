@@ -1,0 +1,24 @@
+{
+  "name": "atom-presentation",
+  "version": "0.0.1",
+  "description": "Сервис для выдачи данных о участниках компитенции",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSahar/Atom-Presentation.git"
+  },
+  "author": "Sakharov A.G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSahar/Atom-Presentation/issues"
+  },
+  "homepage": "https://github.com/GSahar/Atom-Presentation#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  }
+}
