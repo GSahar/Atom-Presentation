@@ -1,0 +1,55 @@
+.head-img {
+    width: 150px;
+}
+
+.container-team {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    margin: 10px 0;
+}
+
+.container-title {
+    color: white;
+    font-family: Rosatom, sans-serif;
+    font-size: 42px;
+}
+
+.head-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.container-img-content {
+    height: 20vmin;
+    width: 40%;
+    /* background-color: brown; */
+}
+
+.container-content {
+    /* background-color: blueviolet; */
+    width: 60%;
+}
+
+.head-img {
+    width: auto;
+    height: inherit;
+}
+
+.head-text {
+    color: #F0A600;
+    font-family: Rosatom, sans-serif;
+    font-size: 32px;  
+}
+
+.div_li {
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.li_img {
+    background-color: blue;
+}

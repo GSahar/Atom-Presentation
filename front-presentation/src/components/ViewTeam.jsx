@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 const ListItem = ({ value }) => (
   <div className='div_li'>
-    <img className='li_avatar' src={value.Avatar} alt='Иконка чемпионата' />
+    <div className='li_img'>
+      <img className='li_avatar' src={value.Avatar} alt='Иконка чемпионата' />
+    </div>
+
     <dev className='li_content'>
       <div className='li_title'>{value.Title}</div>
       <div className='li_description'>{value.Description}</div>
@@ -38,11 +41,18 @@ export default class ViewTeam extends Component {
     return (
       <div className='container-team'>
         <div className='head-container'>
-          <img className='head-img' src={Avatar} alt='Иконка чемпионата' />
-          <div className='head-text'>{Competency}</div>
+
+          <div className='container-content'>
+            <h2 className='head-text'>{Competency}</h2>
+            <h1 className='container-title'>{Title}</h1>
+          </div>
+
+          <div className='container-img-content'>
+            <img className='head-img' src={Avatar} alt='Иконка чемпионата' />
+          </div>
         </div>
 
-        <h1 className='container-title'>{Title}</h1>
+
         <List items={Team} />
         <div className='container-desc'>{Description} </div>
       </div>

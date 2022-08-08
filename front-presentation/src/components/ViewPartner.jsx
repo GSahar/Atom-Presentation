@@ -34,11 +34,11 @@ export default class ViewPartner extends Component {
             return el.id === id;
         });
 
-        let { Title, Service, Description, Caption, Caption1 } = newData[0];
+        let { Title, Service, Description, Caption, Caption1,Avatar } = newData[0];
         return (
             <div className='container-service'>
                 <div className='head-container'>
-                    <img className='head-img' src={require("../image/softline_mono.png")} alt='Иконка спонсора'></img>
+                    <img className='head-img' src={Avatar} alt='Иконка спонсора'></img>
                     <div className='head-caption'>{Caption}</div>
                     <div className='head-text'>{Caption1}</div>
                 </div>

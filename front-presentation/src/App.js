@@ -1,13 +1,15 @@
 import logo from './image/logo.svg';
-import './style/App.css';
+
 import 'antd/dist/antd.css';
+import './style/App.css';
+import './style/team_style.css';
 import axios from 'axios';
 import React, { Component } from 'react';
 import ViewPartner from './components/ViewPartner';
 import ViewTeam from './components/ViewTeam';
 import { Carousel } from 'antd';
 
- export default class App extends Component {
+export default class App extends Component {
 
   constructor(props) {
     super(props);
@@ -37,17 +39,16 @@ import { Carousel } from 'antd';
           <div className='app-head-text'>VII ОТРАСЛЕВОЙ ЧЕМПИОНАТ ПРОФЕССИОНАЛЬНОГО МАСТЕРСТВА ГОСКОРПОРАЦИИ «РОСАТОМ»</div>
         </header>
         <div className='App-body'>
-          <Carousel autoplay  speed={1000}  autoplaySpeed={6000} fade>
+          <Carousel autoplay speed={1000} autoplaySpeed={6000} fade>
             {this.state.items &&
               this.state.items.map((item, index) => {
                 return (
-
                   item.Type === 1 ? (
                     <div className='app-container' key={index} >
                       <ViewTeam data={this.state.items} id={item.id} />
                     </div>
 
-                  ) : (item.Type === 2 ? (                    
+                  ) : (item.Type === 2 ? (
                     <div className='app-container' key={index} >
                       <ViewPartner data={this.state.items} id={item.id} />
                     </div>
