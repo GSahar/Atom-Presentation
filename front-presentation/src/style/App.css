@@ -46,13 +46,13 @@ html {
 }
 
 .app-head-text {
-  margin: 10px 10px 10px 20px;
+  margin: 20px 20px 10px 20px;
   text-align: center;
   width: 80%;
 }
 
 .App-header {  
-  height: 90px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -71,5 +71,14 @@ html {
 }
 
 .App-body {
-  /* background-color: aquamarine; */
+  min-height: 59vh;
+  /*  background-color: aquamarine;  */
+}
+/* 
+.slick-slider  {
+  min-height: 59vh;
+} */
+
+.slick-list{
+  min-height: 89vh;
 }
